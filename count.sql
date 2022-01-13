@@ -1,0 +1,1 @@
+select count(*) from sidsa_service.iot_variant where imei="240305005062304";
