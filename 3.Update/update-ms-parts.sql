@@ -1,0 +1,1 @@
+UPDATE "banners" SET "app" = 'mid', "imag_url" = 'https://imgs.wanmen.org/5.png', "order" = 2, "link" = 'https://www.wanmen.org/courses/456', "color" = '#0d008c', "client_type" = 2  WHERE "banners"."id" = '123'
