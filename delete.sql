@@ -1,6 +1,6 @@
 -- sidsa-admin
 -- /Users/shareit/Projects/sidsa/sidsa-admin/app/sidsa/service/sid_photo.go:102
-DELETE FROM `sid_photo` WHERE `sid_photo`.`id` = 107
+DELETE FROM `sid_photo` WHERE `sid_photo`.`id` = 107;
 
 DELETE FROM `users`  WHERE (name='qimi2') 
 DELETE FROM "public"."banners" WHERE "id" = '15a2915c1f934ebd8ac480fa433'
