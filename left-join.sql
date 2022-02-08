@@ -11,6 +11,7 @@ SELECT  e.ENAME '员工名',m.ENAME '领导名' FROM emp e LEFT JOIN emp m ON e.
 
 -- 列出部门名称和这些部门的员工信息, 同时列出那些没有员工的部门
 SELECT 
+
     d.dname,e.*
 FROM
     dept d 
