@@ -1,8 +1,8 @@
 -- PR90437青岛海湾
 -- IMEI 240305005062877
+SELECT * FROM sidsa_service.iot_variant where imei = 240305005062877;
 UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id=59102;
 UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id>=58456 and id <= 58551;
-SELECT * FROM sidsa_service.iot_variant where imei = 240305005062777;
 
 -- 产量0-99
 -- 0

@@ -1,0 +1,1 @@
+SELECT * FROM sidsa_service.iot_box ib;
