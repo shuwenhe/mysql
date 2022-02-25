@@ -2,7 +2,7 @@
 -- IMEI 240305005062877
 SELECT * FROM sidsa_service.iot_variant where imei = 240305005062877;
 UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id=59102;
-UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id>=58456 and id <= 58551;
+UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id>=62487 and id <= 63036;
 
 -- 产量0-99
 -- 0
@@ -16,7 +16,7 @@ SELECT * FROM sidsa_service.iot_variant where name = "危废窑累计产量";
 
 -- 破碎机S 100-199
 -- 100
-SELECT * FROM sidsa_service.iot_variant where name = "破碎机液压站运行时间";
+SELECT * FROM sidsa_service.iot_variant where name = "破碎机液压站运行时间" AND imei = 240305005062877;
 -- 101
 SELECT * FROM sidsa_service.iot_variant where name = "破碎循环运行时间";
 -- 102
