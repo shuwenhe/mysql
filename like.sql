@@ -1,11 +1,8 @@
-SELECT * FROM  sidsa_service.iot_variant WHERE name LIKE '%产量' HAVING imei =240305005062304;
-SELECT * FROM  sidsa_service.iot_variant WHERE name LIKE '%率';
-找出名字以T结尾的？
-SELECT empno,ename FROM emp WHERE ename LIKE '%T';
-找出名字以K开始的？
-SELECT empno,ename FROM emp e WHERE ename LIKE 'K%';
-找出第二个字每是A的？
-SELECT empno,ename FROM emp WHERE ename LIKE '_A%';
-找出第三个字母是R的？
-SELECT empno,ename FROM emp WHERE ename LIKE '__R%';
-
+-- 百分号%通配符
+select title,author,price from item where title like 'Go%' order by price desc;
+-- 两个通配符
+select title,author,price from item where title like '%Unix%' order by price desc;
+-- 通配符
+select title,author,price from item where title like '%n%x%';
+-- 模糊查询产量：累积产量、台时产量
+SELECT * FROM sidsa_service.iot_variant where name like '%产量%';

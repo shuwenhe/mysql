@@ -1,14 +1,20 @@
-查询薪资等于800的员工姓名和编号？
-SELECT empno,ename,sal FROM emp e WHERE sal = 800;
-查询SMITH的编号和薪资？
-SELECT empno,ename,sal FROM emp e WHERE ename = 'smith';
-查询薪资不等于800的员工姓名和编号？
-SELECT empno,ename,sal FROM emp e WHERE sal != 800;
-SELECT empno,ename,sal FROM emp e WHERE sal <>800;
-查询薪资小于2000的员工姓名和编号？
-SELECT empno,ename,sal FROM emp WHERE sal < 2000;
-查询薪资小于等于3000的员工姓名和编号？
-SELECT empno,ename,sal FROM emp WHERE sal <= 3000;
-查询薪资在2450和3000之间的员工信息？包括2450和3000
-SELECT empno,ename,sal FROM emp WHERE sal >=2450 and sal <= 3000;
-SELECT empno,ename,sal FROM emp e WHERE sal BETWEEN 2450 AND 3000;
+-- where子句 过滤条件
+select title,price from item where price=79;
+-- 返回author为Betsy Beyer的一行
+select title,author,price from item where author="Betsy Beyer";
+-- where子句操作符= <> != < <= > >= between 
+select title,author,price from item where price <= 79 order by price desc;
+-- 不匹配检查
+select id,title,author,price from item where price <> 79.00 order by price desc;
+-- 范围值检查between and
+select id,title,author,price from item where price between 50 and 90 order by price desc limit 1;
+-- and操作符 组合where子句 数据过滤
+select id,title,author,price from item where id = 769 and price <= 79;
+-- OR操作符
+select title,author,price from item where price = 79 or price =49;
+-- IN操作符
+select title,price from item where price in(49,79,89);
+-- OR操作符
+select title,price from item where price=49 or price=79 or price=89;
+-- NOT操作符
+select title,price from item where price not in(49,79,89) order by price desc;

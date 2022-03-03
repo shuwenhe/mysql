@@ -1,1 +1,2 @@
-drop table users;
+-- delete table
+drop table user;
