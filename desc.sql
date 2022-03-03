@@ -1,2 +1,1 @@
-查看表结构
-desc emp;
+desc users;
