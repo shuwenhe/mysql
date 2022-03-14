@@ -1,3 +1,7 @@
 -- m.GET("/workorders/:order_num", handler.GetWorkOrderByOrderNum(logger, woSrv))
 -- shuwen-sidsa-service/interval/pkg/store/workorder/mysql.go:159
 SELECT iot_box.project_num,sys_user.nick_name,sys_user.phone,sid_work_order.id,sid_work_order.order_num,sid_work_order_problem.problem as problem_category,sid_work_order.evaluation_rate,sid_work_order.evaluation_solve,sid_work_order.evaluation_feedback,sid_work_order.user_id,sid_work_order.priority,sid_work_order.problem,sid_work_order.project_id,sid_work_order.picture,sid_work_order.state,sid_work_order.title,sid_work_order.content,sid_work_order.customer_id,sid_work_order.emp_id,sid_work_order.detail,sid_work_order.latest_reply_time,sid_work_order.created_at,sid_work_order.updated_at FROM sidsa_service.sid_work_order LEFT JOIN sys_user ON sys_user.user_id = sid_work_order.user_id LEFT JOIN sid_work_order_problem ON sid_work_order_problem.id = sid_work_order.problem LEFT JOIN iot_box ON iot_box.id = sid_work_order.project_id WHERE sid_work_order.order_num = '103742603102219' ORDER BY `sid_work_order`.`id` LIMIT 1;
+-- shuwen-sidsa-service/interval/pkg/pagination/pager.go:55
+SELECT count(*) FROM `sid_work_order_reply` WHERE sid_work_order_reply.order_num = '103742603102219';
+-- shuwen-sidsa-service/interval/pkg/pagination/pager.go:60
+SELECT * FROM `sid_work_order_reply` WHERE sid_work_order_reply.order_num = '103742603102219' LIMIT 1000;
