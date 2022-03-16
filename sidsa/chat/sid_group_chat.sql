@@ -1,0 +1,1 @@
+SELECT * FROM sidsa_service.sid_group_chat sgc ;
