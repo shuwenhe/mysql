@@ -1,0 +1,1 @@
+TRUNCATE table sidsa_service.iot_real_data ;

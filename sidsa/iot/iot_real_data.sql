@@ -1,0 +1,1 @@
+DELETE FROM sidsa_service.iot_real_data WHERE imei = "240305005062304";
