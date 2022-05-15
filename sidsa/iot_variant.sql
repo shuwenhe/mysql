@@ -14,4 +14,9 @@ SELECT id, imei, port_id, device_id, var_id, name, name_en, address_type, addres
 FROM sidsa_service.iot_variant
 WHERE imei  = 240305005062877 AND name  = '破碎机加热器1热过载';
 
+SELECT id, imei, port_id, device_id, var_id, name, name_en, address_type, address_type2, data_type, `read_write`, note, unit, offset, offset2, is_linear, in_min, in_max, out_min, var_group, out_max, sort, linear_data_type, latest_report_time, deleted_at, is_show, var_type, expression, expression_args
+FROM sidsa_service.iot_variant
+WHERE imei  = 240305005062877 AND var_id  = 488;
+
+
 
