@@ -1,1 +1,3 @@
 SELECT NOW();
+SET time_zone = '+8:00';
+SELECT CURTIME();
