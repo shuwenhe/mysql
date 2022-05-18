@@ -1,3 +1,10 @@
 SELECT NOW();
-SET time_zone = '+8:00';
 SELECT CURTIME();
+1.临时解决方案
+SET time_zone = '+8:00';
+2.永久解决方案
+vim /etc/my.cnf
+[mysqld]
+default-time_zone = '+8:00'
+重启mysql服务。
+/etc/init.d/mysqld restart
