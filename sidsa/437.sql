@@ -97,3 +97,10 @@ SELECT * FROM sidsa_service.iot_variant where name = "协同侧闸板显示" AND
 
 -- 其他Other600-699
 
+SELECT * 
+FROM sidsa_service.iot_alarm ia 
+WHERE imei = '240305005062877';
+
+DELETE 
+FROM sidsa_service.iot_alarm 
+WHERE imei = '240305005062877';
