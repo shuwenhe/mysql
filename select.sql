@@ -1,5 +1,8 @@
 SELECT count(*) FROM `iot_user_project` WHERE user_id = 435 AND project_id = 290319 AND `iot_user_project`.`deleted_at` IS NULL;
 SELECT count(*) FROM `iot_user_project` WHERE user_id = 434 AND project_id = 190304 AND `iot_user_project`.`deleted_at` IS NULL;
+-- LIKE
+
+
 SELECT * 
 FROM sidsa_service.iot_alarm ia 
 WHERE imei = '240305005062877';
