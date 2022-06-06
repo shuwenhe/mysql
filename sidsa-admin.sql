@@ -1,4 +1,4 @@
--- /sidsa-admin/app/sidsa/service/sid_work_order_problem.go:74
+-- /mnt/d/shuwen/sidsa-service/sidsa-admin/app/sidsa/service/sid_work_order_problem.go:74
 SELECT sqm.question_category_id,GROUP_CONCAT(ibt.box_type_name) AS box_type_name
 FROM sid_question_map sqm
 INNER JOIN iot_box_type ibt
