@@ -1,4 +1,4 @@
--- PR90495朔州金圆
+-- PR90495
 -- IMEI 240305005122847
 SELECT id, imei, port_id, device_id, var_id, name, name_en, address_type, address_type2, data_type, `read_write`, note, unit, offset, offset2, is_linear, in_min, in_max, out_min, var_group, out_max, sort, linear_data_type, latest_report_time, deleted_at, is_show, var_type, expression, expression_args
 FROM sidsa_service.iot_variant
@@ -7,12 +7,6 @@ WHERE imei = "240305005122847" AND name = "混合器重量"
 SELECT * FROM sidsa_service.iot_variant where imei = 240305005122847;
 UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id=92170;
 UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id>=92170 and id <= 92462;
-
--- PR90219朔州金圆
--- IMEI 240305005062444
-SELECT * FROM sidsa_service.iot_variant where imei = 240305005062444;
-UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id=59102;
-UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id>=58456 and id <= 58551;
 
 -- 产量0-99
 -- 0
@@ -24,29 +18,37 @@ SELECT * FROM sidsa_service.iot_variant where name = "危废窑台时产量";
 -- 3
 SELECT * FROM sidsa_service.iot_variant where name = "危废窑累计产量";
 
--- 破碎机S 100-199
+-- 混合器M 100-199
 -- 100
-SELECT * FROM sidsa_service.iot_variant where name = "破碎机液压站运行时间";
+SELECT * FROM sidsa_service.iot_variant where name = "混合器重量" AND imei = "240305005122847";
 -- 101
-SELECT * FROM sidsa_service.iot_variant where name = "破碎循环运行时间";
+SELECT * FROM sidsa_service.iot_variant where name = "混合器正转压力" AND imei = "240305005122847";
+-- 102
+SELECT * FROM sidsa_service.iot_variant where name = "混合器反转压力" AND imei = "240305005122847";
+-- 103
+SELECT * FROM sidsa_service.iot_variant where name = "混合器补油压力" AND imei = "240305005122847";
+-- 104
+SELECT * FROM sidsa_service.iot_variant where name = "混合器液压站运行时间" AND imei = "240305005122847";
+-- 105
+SELECT * FROM sidsa_service.iot_variant where name = "混合器前1小时产量" AND imei = "240305005122847";
+-- 106
+SELECT * FROM sidsa_service.iot_variant where name = "混合器当前小时产量" AND imei = "240305005122847";
+-- 107
+SELECT * FROM sidsa_service.iot_variant where name = "混合器温度" AND imei = "240305005122847";
+-- 108
+SELECT * FROM sidsa_service.iot_variant where name = "混合器累计运行时间" AND imei = "240305005122847";
+
+-- 破碎机S 200-299
+-- 200
+SELECT * FROM sidsa_service.iot_variant where name = "破碎机轴1正转压力";
+-- 201
+SELECT * FROM sidsa_service.iot_variant where name = "破碎机轴1反转压力";
 -- 102
 SELECT * FROM sidsa_service.iot_variant where name = "破碎机液压站温度";
 -- 103
 SELECT * FROM sidsa_service.iot_variant where name = "破碎仓氧含量";
 -- 104
 SELECT * FROM sidsa_service.iot_variant where name = "破碎仓氧分析透光率";
-
--- 混合器M 200-299
--- 201
-SELECT * FROM sidsa_service.iot_variant where name = "混合器液压站运行时间";
--- 202
-SELECT * FROM sidsa_service.iot_variant where name = "混合循环运行时间";
--- 203
-SELECT * FROM sidsa_service.iot_variant where name = "混合器温度";
--- 204
-SELECT * FROM sidsa_service.iot_variant where name = "混合仓氧含量";
--- 205
-SELECT * FROM sidsa_service.iot_variant where name = "混合仓氧分析透光率";
 
 -- 泵送P 300-399
 -- 301
