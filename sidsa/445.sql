@@ -17,6 +17,17 @@ SELECT * FROM sidsa_service.iot_variant where name = "破碎机部分运行时�
 SELECT * FROM sidsa_service.iot_variant where name = "破碎机液压站部分运行时间" AND imei = 240305005062777;
 -- 6
 SELECT * FROM sidsa_service.iot_variant where name = "部分破碎率" AND imei = 240305005062777;
+-- power50-60
+-- 提升机总输入有功电能
+SELECT * FROM sidsa_service.iot_variant where name = "提升机总输入有功电能" AND imei = 240305005122847;
+-- 配电柜总输入有功电能
+SELECT * FROM sidsa_service.iot_variant where name = "配电柜总输入有功电能" AND imei = 240305005122847;
+-- 破碎机总输入有功电能
+SELECT * FROM sidsa_service.iot_variant where name = "破碎机总输入有功电能" AND imei = 240305005122847;
+-- 混合器总输入有功电能
+SELECT * FROM sidsa_service.iot_variant where name = "混合器总输入有功电能" AND imei = 240305005122847;
+-- 固体泵总输入有功电能
+SELECT * FROM sidsa_service.iot_variant where name = "固体泵总输入有功电能" AND imei = 240305005122847;
 
 -- 9999
 SELECT * FROM sidsa_service.iot_variant where name = "需要补焊刀轴";

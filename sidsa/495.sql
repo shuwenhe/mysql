@@ -23,6 +23,18 @@ SELECT * FROM sidsa_service.iot_variant where name = "危废窑台时产量";
 -- 3
 SELECT * FROM sidsa_service.iot_variant where name = "危废窑累计产量";
 
+-- power50-60
+-- 提升机总输入有功电能
+SELECT * FROM sidsa_service.iot_variant where name = "提升机总输入有功电能" AND imei = 240305005122847;
+-- 配电柜总输入有功电能
+SELECT * FROM sidsa_service.iot_variant where name = "配电柜总输入有功电能" AND imei = 240305005122847;
+-- 破碎机总输入有功电能
+SELECT * FROM sidsa_service.iot_variant where name = "破碎机总输入有功电能" AND imei = 240305005122847;
+-- 混合器总输入有功电能
+SELECT * FROM sidsa_service.iot_variant where name = "混合器总输入有功电能" AND imei = 240305005122847;
+-- 固体泵总输入有功电能
+SELECT * FROM sidsa_service.iot_variant where name = "固体泵总输入有功电能" AND imei = 240305005122847;
+
 -- 混合器M 100-199
 -- 100
 SELECT * FROM sidsa_service.iot_variant where name = "混合器重量" AND imei = "240305005122847";
