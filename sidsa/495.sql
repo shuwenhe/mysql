@@ -12,12 +12,8 @@ SELECT * FROM sidsa_service.iot_variant where imei = 240305005122847;
 UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id=93760;
 UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id>=93760 and id <= 94063;
 
-
--- 状态
-SELECT * FROM sidsa_service.iot_variant where name = "SMP总故障";
-SELECT * FROM sidsa_service.iot_variant where imei = 240305005122847 AND name = "SMP总故障";
-
--- 产量0-99
+-- 产量相关0-99
+SELECT * FROM sidsa_service.iot_variant where imei = 240305005122847 AND name = "提升机上料重量";
 -- 0
 SELECT * FROM sidsa_service.iot_variant where name = "协同窑累计产量";
 -- 1
@@ -26,6 +22,10 @@ SELECT * FROM sidsa_service.iot_variant where name = "协同窑台时产量";
 SELECT * FROM sidsa_service.iot_variant where name = "危废窑台时产量";
 -- 3
 SELECT * FROM sidsa_service.iot_variant where name = "危废窑累计产量";
+
+-- 状态
+SELECT * FROM sidsa_service.iot_variant where name = "SMP总故障";
+SELECT * FROM sidsa_service.iot_variant where imei = 240305005122847 AND name = "SMP总故障";
 
 -- power50-60
 -- 提升机总输入有功电能
