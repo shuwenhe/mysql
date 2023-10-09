@@ -9,9 +9,8 @@ FROM sidsa_service.iot_variant
 WHERE imei = "240305005122847" AND name = "混合器重量"
 
 SELECT * FROM sidsa_service.iot_variant where imei = 240305005122847;
-UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id=92170;
-UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id>=92170 and id <= 92462;
-UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id>=92563 and id <= 92859;
+UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id=93760;
+UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id>=93760 and id <= 94063;
 
 -- 产量0-99
 -- 0
