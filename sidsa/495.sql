@@ -12,6 +12,11 @@ SELECT * FROM sidsa_service.iot_variant where imei = 240305005122847;
 UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id=93760;
 UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id>=93760 and id <= 94063;
 
+
+-- 状态
+SELECT * FROM sidsa_service.iot_variant where name = "SMP总故障";
+SELECT * FROM sidsa_service.iot_variant where imei = 240305005122847 AND name = "SMP总故障";
+
 -- 产量0-99
 -- 0
 SELECT * FROM sidsa_service.iot_variant where name = "协同窑累计产量";
