@@ -18,6 +18,15 @@ WHERE imei = "240305005122847" AND name LIKE "%产量%";
 配电柜总输入有功电能
 
 -- 101-199 破碎机
+SELECT *
+FROM sidsa_service.iot_variant
+WHERE imei = "240305005122847" 
+AND name LIKE "%破碎仓%";
+
+SELECT *
+FROM sidsa_service.iot_variant
+WHERE imei = "240305005122847" AND custom_group = 777;
+
 SELECT id, imei, port_id, device_id, var_id, name, name_en, address_type, address_type2, data_type, `read_write`, note, unit, offset, offset2, is_linear, in_min, in_max, out_min, var_group, out_max, sort, linear_data_type, latest_report_time, deleted_at, is_show, var_type, expression, expression_args
 FROM sidsa_service.iot_variant
 WHERE imei = "240305005122847" AND name LIKE "%破碎仓%";
