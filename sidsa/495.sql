@@ -311,4 +311,19 @@ SELECT id, user_id, project_id, create_by, update_by, created_at, updated_at, de
 FROM sidsa_service.iot_user_project
 WHERE user_id = 690; 
 
+SELECT * FROM sidsa_service.iot_variant where imei = 240305005122847;
+UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id=92170;
+UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id>=92170 and id <= 92462;
 
+UPDATE sidsa_service.iot_variant 
+SET custom_group = 0 
+WHERE id=94308;
+
+SELECT *
+FROM sidsa_service.iot_variant
+WHERE imei = "240305005122847" 
+AND id = 94308
+
+UPDATE sidsa_service.iot_variant 
+SET custom_group = 0 
+WHERE custom_group = 999;
