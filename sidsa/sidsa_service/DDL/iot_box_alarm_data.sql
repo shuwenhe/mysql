@@ -10,3 +10,7 @@ CREATE TABLE `iot_box_alarm_data` (
   `deleted_at` datetime(3) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=646815 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- 630229
+SELECT COUNT(1)
+FROM sidsa_service.iot_box_alarm_data;
