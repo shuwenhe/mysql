@@ -1,2 +1,2 @@
 mysql --version
-SELECT VERSION();
+select version();
