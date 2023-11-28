@@ -1,3 +1,6 @@
+sudo apt --fix-broken install
+sudo apt-get install mysql-server=8.0.26-1ubuntu21.04 mysql-client=8.0.26-1ubuntu21.04 mysql-common=8.0.26-1ubuntu21.04
+
 https://downloads.mysql.com/archives/community/
 1.下载安装包
 wget https://downloads.mysql.com/archives/get/p/23/file/mysql-server_8.0.26-1ubuntu21.04_amd64.deb-bundle.tar
