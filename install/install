@@ -9,6 +9,7 @@ wget https://downloads.mysql.com/archives/get/p/23/file/mysql-server_8.0.26-1ubu
 3.安装依赖
 sudo apt install -y libaio1 libmecab2 man-db libc-bin
 4.安装mysql
+dpkg -i mysql-*
 dpkg -i mysql-community-client-plugins_8.0.26-1ubuntu21.04_amd64.deb
 dpkg -i mysql-community-client-core_8.0.26-1ubuntu21.04_amd64.deb
 dpkg -i mysql-common_8.0.26-1ubuntu21.04_amd64.deb
