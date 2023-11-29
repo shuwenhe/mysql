@@ -1,0 +1,74 @@
+\documentclass[12pt,twiside,a4paper]{book}
+\usepackage{feynmp} % 这个宏包可以用来在 LaTeX 中使用 MetaFont 图形元素
+\usepackage{xeCJK} % 使用xeCJK处理中文
+\usepackage{diagbox} % 使用 diagbox 宏包
+\usepackage[centertags]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{newlfont}
+\usepackage{makeidx}
+\usepackage{wasysym}
+\usepackage{geometry} 
+\usepackage{graphics}
+\usepackage{slashbox} 
+\usepackage{fancyhdr} 
+\usepackage[pdftex]{graphicx}
+\usepackage{epstopdf}
+\usepackage{cite}
+\usepackage{listings}
+\usepackage{tocbibind}
+\usepackage{ulem} %
+\usepackage{CJKutf8}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{titlesec}
+
+\setcounter{tocdepth}{8} % 生成目录层级
+\setcounter{secnumdepth}{4}
+\renewcommand\thesection{\arabic{section}}
+\usepackage[pdfstartview=FitH,CJKbookmarks=true,bookmarks,bookmarksnumbered=true,
+    colorlinks=true,citecolor=black,linkcolor=black,anchorcolor=green,urlcolor=black]{hyperref}
+\titleformat{\chapter}[display]{\normalfont\huge\bfseries\center}{\chaptertitlename}{1pt}{\Huge}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}[runin]{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titleformat{\subparagraph}[runin]{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+\titlespacing*{\chapter} {0pt}{10pt}{10pt}
+\titlespacing*{\section} {0pt}{0.5ex plus 1ex minus .2ex}{0.3ex plus .2ex}
+\titlespacing*{\subsection} {0pt}{0.25ex plus 1ex minus .1ex}{0.5ex plus .1ex}
+\titlespacing*{\subsubsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titlespacing*{\paragraph} {0pt}{3.25ex plus 1ex minus .2ex}{1em}
+\titlespacing*{\subparagraph} {\parindent}{3.25ex plus 1ex minus .2ex}{1em}
+\numberwithin{chapter}{part}
+\geometry{left=2.0cm,right=20mm,top=25mm,bottom=25mm}
+\let\cleardoublepage\clearpage
+\setlength\parskip{\baselineskip}
+
+\usepackage{amssymb}
+\usepackage{diagbox}
+\usepackage{tipa}
+\begin{document}
+
+\author
+{
+%Peking University\\
+%ShuwenHe\\
+%1201220707@pku.edu.cn
+}
+
+\title{mysql}
+\maketitle
+\tableofcontents % 显示目录
+\newpage
+\pagestyle{fancy}
+
+%\lhead{\includegraphics{sidsa.png}}
+%\rhead{}
+%\lfoot{}
+%\rfoot{}
+\section{show}
+\begin{lstlisting}[language=sql,breaklines = true]
+show variables like 'port';
+\end{lstlisting}
+
+\end{document}
