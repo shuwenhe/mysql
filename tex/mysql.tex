@@ -91,4 +91,32 @@ net stop mysql
 net start mysql
 \end{lstlisting}
 
+\section{master slave}
+在 MySQL 8.0 中设置主从复制(Master-Slave Replication)需要执行以下步骤:\\
+\subsection{在主服务器上设置}
+\subsubsection{编辑MySQL配置文件}
+打开主服务器的MySQL配置文件(通常是 /etc/mysql/mysql.conf.d/mysqld.cnf )，并确保以下设置:\\
+\begin{lstlisting}[language=sql,breaklines = true]
+[mysqld]
+server-id=1             # 服务器id (设置唯一标识)
+log-bin=/var/log/mysql/mysql-bin.log # 打开日志
+binlog_do_db = your_database_name
+\end{lstlisting}
+server-id是唯一的标识符，每个服务器都应有不同的ID。\\
+log\_bin指定binlog日志的路径。\\
+binlog\_do\_db指定要复制的数据库名，可以根据需求设置。
+\subsection{重启MySQL服务}
+sudo systemctl restart mysql
+\subsection{创建用于复制的用户}
+\begin{lstlisting}[language=sql,breaklines = true]
+CREATE USER 'replication_user'@'slave_ip' IDENTIFIED BY 'password';
+GRANT REPLICATION SLAVE ON *.* TO 'replication_user'@'slave_ip';
+FLUSH PRIVILEGES;
+\end{lstlisting}
+替换 'replication\_user'、'slave\_ip' 和 'password' 为你自己的用户名、从服务器IP和密码。
+\subsection{获取主服务器状态}
+\begin{lstlisting}[language=sql,breaklines = true]
+SHOW MASTER STATUS;
+\end{lstlisting}
+
 \end{document}
