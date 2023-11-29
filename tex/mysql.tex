@@ -80,4 +80,15 @@ show variables like 'port';
 一对多：两张表，多的表加外键。\\
 一对一：外键唯一。
 
+\section{host}
+\begin{lstlisting}[language=sql,breaklines = true]
+mysql -u root -p
+use mysql;
+select user,host from user;
+update user set host = '%' where user='root';
+flush privileges;
+net stop mysql
+net start mysql
+\end{lstlisting}
+
 \end{document}
