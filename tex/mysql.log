@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.4) (preloaded format=xelatex 2023.6.13)  29 NOV 2023 09:21
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.4) (preloaded format=xelatex 2023.6.13)  29 NOV 2023 09:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -852,14 +852,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `mysql.out' has not changed.
-(rerunfilecheck)             Checksum: AE09CB6DA0A6362E8D5004D5C8F946FA;174.
+(rerunfilecheck)             Checksum: 31F0F27788150544FD0F6A9939BA9174;274.
  ) 
 Here is how much of TeX's memory you used:
- 18220 strings out of 411427
- 348350 string characters out of 5823212
- 1850290 words of memory out of 5000000
- 38219 multiletter control sequences out of 15000+600000
- 522996 words of font info for 95 fonts, out of 8000000 for 9000
+ 18259 strings out of 411427
+ 351073 string characters out of 5823212
+ 1852290 words of memory out of 5000000
+ 38257 multiletter control sequences out of 15000+600000
+ 523004 words of font info for 96 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  70i,11n,81p,432b,1226s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
