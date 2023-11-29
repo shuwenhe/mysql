@@ -118,5 +118,32 @@ FLUSH PRIVILEGES;
 \begin{lstlisting}[language=sql,breaklines = true]
 SHOW MASTER STATUS;
 \end{lstlisting}
+记下显示的文件名和位置，后面在从服务器设置时会用到。\\
+\subsection{在从服务器上设置}
+\subsubsection{编辑MySQL配置文件}
+打开从服务器的MySQL配置文件，配置如下：\\
+\begin{lstlisting}[language=sql,breaklines = true]
+[mysqld]
+server-id = 2
+\end{lstlisting}
+server-id是唯一的标识符，与主服务器不同即可。
+\subsubsection{重启MySQL服务}
+sudo systemctl restart mysql
+\subsubsection{连接到主服务器}
+在MySQL命令行中输入以下命令（替换 <master\_log\_file> 和 <position> 为主服务器的文件名和位置，这些信息是从主服务器上 SHOW MASTER STATUS; 获得的）：
+\begin{lstlisting}[language=sql,breaklines = true]
+CHANGE MASTER TO MASTER_HOST='master_ip', MASTER_USER='replication_user', MASTER_PASSWORD='password', MASTER_LOG_FILE='<master_log_file>', MASTER_LOG_POS=<position>;
+\end{lstlisting}
+替换 'master\_ip'、'replication\_user'、'password'、'<master\_log\_file>' 和 <position> 为你的主服务器IP、用户名、密码、主服务器的文件名和位置。
+\subsubsection{启动从服务器复制}
+\begin{lstlisting}[language=sql,breaklines = true]
+START SLAVE;
+\end{lstlisting}
+\subsubsection{检查复制状态}
+\begin{lstlisting}[language=sql,breaklines = true]
+SHOW SLAVE STATUS \G;
+\end{lstlisting}
+确保 Slave\_IO\_Running 和 Slave\_SQL\_Running 均为 Yes，表示主从复制已成功启动。\\
+完成这些步骤后，你的MySQL主从复制应该已经设置完成，主服务器上的更改会自动同步到从服务器。
 
 \end{document}
