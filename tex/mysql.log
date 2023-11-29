@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.4) (preloaded format=xelatex 2023.6.13)  29 NOV 2023 14:45
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.4) (preloaded format=xelatex 2023.6.13)  29 NOV 2023 14:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -667,7 +667,7 @@ Package fontspec Info: Font family 'FandolSong-Regular(0)' created for font
 LaTeX Warning: Unused global option(s):
     [twiside].
 
-No file mysql.aux.
+(mysql.aux)
 \openout1 = `mysql.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
@@ -681,7 +681,7 @@ LaTeX Font Info:    ... okay on input line 50.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
 0.
-(C:\CTEX\MiKTeX\tex/latex/base\ts1cmr.fd
+ (C:\CTEX\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 50.
@@ -799,14 +799,12 @@ Package color Info: Driver file: xetex.def on input line 149.
 
 (C:\CTEX\MiKTeX\tex/latex/graphics\mathcolor.ltx))
 Package hyperref Info: Link coloring ON on input line 50.
+ (mysql.out) (mysql.out)
 \@outlinefile=\write4
 \openout4 = `mysql.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
+
 
 (C:\CTEX\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -831,14 +829,14 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 ) [1
 
 
-]
-No file mysql.toc.
+] (mysql.toc)
 \tf@toc=\write5
 \openout5 = `mysql.toc'.
 
-[2
+ [2
 
-] (C:\CTEX\MiKTeX\tex/latex/listings\lstlang1.sty
+]
+(C:\CTEX\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 Underfull \hbox (badness 10000) in paragraph at lines 95--96
@@ -889,21 +887,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-Package rerunfilecheck Warning: File `mysql.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `mysql.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  C62BE2D2DE9160E4D35A1CFFB3844574;2355.
+Package rerunfilecheck Info: File `mysql.out' has not changed.
+(rerunfilecheck)             Checksum: C62BE2D2DE9160E4D35A1CFFB3844574;2355.
  ) 
 Here is how much of TeX's memory you used:
- 18316 strings out of 411427
- 354594 string characters out of 5823212
+ 18369 strings out of 411427
+ 355262 string characters out of 5823212
  1920290 words of memory out of 5000000
- 38333 multiletter control sequences out of 15000+600000
- 517498 words of font info for 74 fonts, out of 8000000 for 9000
+ 38364 multiletter control sequences out of 15000+600000
+ 523028 words of font info for 99 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  70i,11n,81p,432b,1226s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
