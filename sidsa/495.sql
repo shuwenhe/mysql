@@ -1,4 +1,4 @@
--- 414
+-- 495
 -- 240305005062748
 -- 更新数据
 SELECT * FROM sidsa_service.iot_variant WHERE imei = 240305005062748;
