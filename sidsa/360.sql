@@ -1,5 +1,5 @@
 -- PR90360宜春红狮
--- IMEI 240305005062444
+-- IMEI 240305005062441
 -- 更新数据
 SELECT * FROM sidsa_service.iot_variant WHERE imei = 240305005062441;
 UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id=99469;
