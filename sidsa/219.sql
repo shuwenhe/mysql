@@ -4,6 +4,7 @@ SELECT id, imei, port_id, device_id, var_id, name, name_en, address_type, addres
 FROM sidsa_service.iot_variant
 WHERE imei = "240305005122847" AND name = "混合器重量"
 
+-- 更新数据
 SELECT * FROM sidsa_service.iot_variant where imei = 240305005122847;
 UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id=92170;
 UPDATE sidsa_service.iot_variant SET sort=9999 WHERE id>=92170 and id <= 92462;
