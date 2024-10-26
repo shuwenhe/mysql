@@ -1,0 +1,3 @@
+sudo apt install libmysqlcppconn-dev
+conn.cpp
+g++ -o mysql_example mysql_example.cpp -lmysqlcppconn
