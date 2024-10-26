@@ -1,3 +1,13 @@
+sudo apt update
+sudo apt install mysql-server
+sudo mysql_secure_installation
+sudo mysql -u root -p
+sudo systemctl status mysql
+sudo systemctl start mysql
+sudo systemctl enable mysql
+sudo apt install mysql-client
+
+
 sudo apt --fix-broken install
 sudo apt-get install mysql-server=8.0.26-1ubuntu21.04 mysql-client=8.0.26-1ubuntu21.04 mysql-common=8.0.26-1ubuntu21.04
 
