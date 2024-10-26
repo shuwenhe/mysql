@@ -1,1 +1,0 @@
-SELECT * FROM sidsa_service.`sys_dept` sd ;
