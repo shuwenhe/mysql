@@ -1,5 +1,5 @@
 DELETE 
-FROM sidsa_service.iot_alarm 
+FROM sql_service.iot_alarm 
 WHERE imei = '240305005062877';
 
 delete from items where stock = 100;

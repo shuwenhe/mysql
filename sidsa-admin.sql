@@ -1,4 +1,4 @@
-1. -- /mnt/d/shuwen/sidsa-service/sidsa-admin/app/sidsa/service/sid_work_order_problem.go:74
+1. -- /mnt/d/shuwen/xstiku-service/xstiku-admin/app/xstiku/service/sid_work_order_problem.go:74
 // GetQuestionBoxTypes 获取SidWorkOrderProblem列表
 func (e *SidWorkOrderProblem) GetQuestionBoxTypes(questionCategoryIds []string) (list []struct {
 	QuestionCategoryId int
@@ -25,4 +25,4 @@ WHERE sqm.question_category_id
 IN(1,2,3,4,5,6,7,8,9,10)
 GROUP BY sqm.question_category_id;
 
-2.-- /mnt/d/shuwen/sidsa-service/sidsa-admin/app/sidsa/service/sid_work_order_problem.go:47
+2.-- /mnt/d/shuwen/xstiku-service/xstiku-admin/app/xstiku/service/sid_work_order_problem.go:47

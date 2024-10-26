@@ -1,1 +1,1 @@
-TRUNCATE table sidsa_service.iot_real_data ;
+TRUNCATE table xstiku_service.iot_real_data ;

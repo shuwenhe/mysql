@@ -1,4 +1,4 @@
-SELECT COUNT(*) FROM sidsa_service.iot_variant iv WHERE imei IS NOT NULL GROUP BY imei ;
+SELECT COUNT(*) FROM sql_service.iot_variant iv WHERE imei IS NOT NULL GROUP BY imei ;
 如果有group by 语句 WHERE后面只能跟：参加分组的字段，以及分组函数，其他一律不能跟。
 找出“每个部门，不同工作岗位”的最高薪资？
 SELECT deptno,job,MAX(sal) FROM emp d GROUP BY deptno,job;

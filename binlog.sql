@@ -2,7 +2,7 @@ docker images
 docker ps
 docker exec -it e1066fe2db35 /bin/bash
 mysql -u root -p
-sidsa!#123456!#
+sql!#123456!#
 show binary logs;
 purge binary logs to 'binlog.000085';
 

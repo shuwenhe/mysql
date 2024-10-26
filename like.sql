@@ -5,4 +5,4 @@ select title,author,price from item where title like '%Unix%' order by price des
 -- 通配符
 select title,author,price from item where title like '%n%x%';
 -- 模糊查询产量：累积产量、台时产量
-SELECT * FROM sidsa_service.iot_variant where name like '%产量%';
+SELECT * FROM xstiku_service.iot_variant where name like '%产量%';

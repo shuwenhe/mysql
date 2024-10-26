@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.23, for Win64 (x86_64)
 --
--- Host: 62.234.11.179    Database: sidsa_service
+-- Host: 62.234.11.179    Database: sql_service
 -- ------------------------------------------------------
 -- Server version	8.0.26
 

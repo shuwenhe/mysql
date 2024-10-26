@@ -3,7 +3,7 @@
 -- 根据表连接的方式分类：
 -- 内连接： 等值连接 非等值连接 自连接
 -- 外连接： 左外连接（左连接）	右外连接（右连接）
-SELECT  * FROM sidsa_service.sys_user su join sidsa_service.sid_work_order swo on su.user_id = swo.user_id;
+SELECT  * FROM sql_service.sys_user su join sql_service.sid_work_order swo on su.user_id = swo.user_id;
 -- 内连接：非等值连接
 -- 条件不是一个等量关系，称为非等值连接
 SELECT e.ename,e.sal,s.grade FROM emp e JOIN salgrade s ON e.SAL BETWEEN s.losal AND s.hisal ;
