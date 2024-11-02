@@ -1,4 +1,4 @@
-CREATE TABLE test_com.users(
+CREATE TABLE xstiku.users(
 id INT PRIMARY KEY AUTO_INCREMENT,
 username VARCHAR
 (100) NOT NULL UNIQUE,
