@@ -1,0 +1,2 @@
+mysql -h 39.107.59.4 -P 33061 -u xstiku -p
+mysql -P 33061 -u xstiku -p
