@@ -2,3 +2,7 @@ Communications link failure
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 Communications link failure
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+通信链路故障
+最后一个成功发送到服务器的数据包是在 0 毫秒前。驱动程序尚未收到来自服务器的任何数据包。
+连接被拒绝：没有更多信息
+连接被拒绝：没有更多信息
