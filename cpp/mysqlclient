@@ -1,1 +1,1 @@
-g++ -o conn conn.cpp -lmysqlclient
+g++ conn.cpp -o conn -lmysqlclient
