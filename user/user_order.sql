@@ -1,4 +1,4 @@
--- crmeb_merchant.eb_user_order definition
+-- shuwen.user_order definition
 
 CREATE TABLE `eb_user_order` (
   `order_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
