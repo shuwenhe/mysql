@@ -1,6 +1,6 @@
 -- shuwen.user_order definition
 
-CREATE TABLE `eb_user_order` (
+CREATE TABLE `user_order` (
   `order_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `link_id` int(11) DEFAULT NULL COMMENT '关联ID',
   `pay_type` varchar(10) DEFAULT NULL COMMENT '支付方式：1微信，2支付宝',
