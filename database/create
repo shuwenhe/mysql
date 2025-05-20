@@ -1,0 +1,6 @@
+CREATE DATABASE shuwen;
+CREATE USER 'shuwen'@'%' IDENTIFIED BY '123456';
+GRANT ALL PRIVILEGES ON shuwen.* TO 'shuwen'@'%';
+FLUSH PRIVILEGES;
+
+show databases;
