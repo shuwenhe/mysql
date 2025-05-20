@@ -1,0 +1,7 @@
+CREATE DATABASE goods;
+CREATE USER 'goods'@'%' IDENTIFIED BY '123456';
+GRANT ALL PRIVILEGES ON goods.* TO 'goods'@'%';
+FLUSH PRIVILEGES;
+
+show databases;
+

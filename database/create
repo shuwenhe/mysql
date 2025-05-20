@@ -4,3 +4,4 @@ GRANT ALL PRIVILEGES ON shuwen.* TO 'shuwen'@'%';
 FLUSH PRIVILEGES;
 
 show databases;
+
