@@ -1,0 +1,7 @@
+CREATE DATABASE quant;
+CREATE USER 'quant'@'%' IDENTIFIED BY '123456';
+GRANT ALL PRIVILEGES ON quant.* TO 'quant'@'%';
+FLUSH PRIVILEGES;
+
+show databases;
+
