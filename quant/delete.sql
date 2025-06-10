@@ -1,0 +1,1 @@
+DELETE FROM quant.btc_kline;
