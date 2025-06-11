@@ -1,0 +1,1 @@
+ALTER TABLE kline_BTCUSDT DROP INDEX idx_open_time;
